@@ -1,19 +1,27 @@
 package hx.amk.admin.controller;
 
-
-import hx.amk.admin.dto.UserDto;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import hx.amk.admin.service.IUserService;
+import hx.amk.infrastructure.validation.JsonResponse;
+import hx.amk.admin.dto.AddUserRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "user")
+@RequestMapping(value = "api/user")
 public class UserController {
 
-    @RequestMapping(value = "list",method = RequestMethod.GET)
-    public UserDto listUser(@RequestParam String userName){
-        UserDto user=new UserDto();
-        return user;
+    @Autowired
+    private  IUserService userService;
+
+    @PostMapping(value = "add")
+    public JsonResponse addUser(@RequestBody AddUserRequest request){
+
+        JsonResponse response=userService.addUser(request);
+        return response;
+    }
+
+    @GetMapping(value = "get")
+    public AddUserRequest getUser(){
+        return new AddUserRequest();
     }
 }

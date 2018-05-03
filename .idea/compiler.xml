@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hx.amk.admin" />
+        <module name="hx.amk.infrastructure" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hx.amk.admin" target="1.8" />
+      <module name="hx.amk.infrastructure" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
