@@ -4,6 +4,7 @@ import java.util.List;
 
 public interface IValidationErrors{
     IValidationErrors addErrors(List<ValidationErrorItem> errorItems);
+    IValidationErrors addErrors(ValidationErrorItem errorItem);
 
     List<ValidationErrorItem> getErrorItems();
 

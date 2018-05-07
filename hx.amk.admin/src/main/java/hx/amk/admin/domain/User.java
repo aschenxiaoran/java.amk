@@ -1,16 +1,8 @@
 package hx.amk.admin.domain;
 
-public class User {
+import hx.amk.infrastructure.aggragateRoots.impl.AggragateRoot;
 
-    private String name;
-
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String name){
-        this.name=name;
-    }
+public class User extends AggragateRoot {
 
     private String code;
 

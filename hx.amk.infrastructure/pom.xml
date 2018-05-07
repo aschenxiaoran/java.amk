@@ -26,5 +26,11 @@
         <artifactId>fluent-validator</artifactId>
         <version>1.0.5</version>
     </dependency>
+        <dependency>
+            <groupId>com.baidu.unbiz</groupId>
+            <artifactId>fluent-validator</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>

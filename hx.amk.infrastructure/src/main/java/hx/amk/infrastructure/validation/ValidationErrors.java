@@ -26,6 +26,12 @@ public class ValidationErrors implements IValidationErrors{
     }
 
     @Override
+    public IValidationErrors addErrors(ValidationErrorItem errorItem) {
+        _errorItemList.add(errorItem);
+        return this;
+    }
+
+    @Override
     public List<ValidationErrorItem> getErrorItems() {
         return _errorItemList;
     }

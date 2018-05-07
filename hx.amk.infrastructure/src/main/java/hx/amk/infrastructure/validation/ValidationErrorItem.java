@@ -5,6 +5,7 @@ public final class ValidationErrorItem {
     private final String propertyName;
     private final String errorMessage;
     private final Object attemptValue;
+    private String errorType;
 
     public ValidationErrorItem(String propertyName, Object attemptValue, String errorMessage) {
         this.propertyName = propertyName;
@@ -22,5 +23,11 @@ public final class ValidationErrorItem {
 
     public Object getAttemptValue() {
         return attemptValue;
+    }
+
+    public String getErrorType(){return errorType;}
+
+    public void setErrorType(String errorType) {
+        this.errorType = errorType;
     }
 }
