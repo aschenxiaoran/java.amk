@@ -5,7 +5,8 @@ import hx.amk.infrastructure.entities.ILoginUser;
 
 import java.util.Date;
 
-public abstract   class AggragateRoot implements IAggragateRoot {
+public abstract class AggragateRoot implements IAggragateRoot {
+
 
     private int id;
     private String name;
@@ -66,14 +67,34 @@ public abstract   class AggragateRoot implements IAggragateRoot {
         return modifyTime;
     }
 
-    public  void init(ILoginUser loginUser){
-        this.name=loginUser.getName();
-        this.createUserId=loginUser.getUserId();
-        this.createUserName=loginUser.getName();
-        this.createTime= new Date();
-        this.modifyUserId=loginUser.getUserId();
-        this.modifyUserName=loginUser.getName();
-        this.modifyTime= new Date();
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if(object==null || this.getClass()!=object.getClass()){
+            return false;
+        }
+        AggragateRoot aggragateRoot=(AggragateRoot)object;
+        if(aggragateRoot!=null ? id!=(aggragateRoot.id):true){
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public int hashCode(){
+        return this.id;
+    }
+
+    public void init(ILoginUser loginUser) {
+        this.name = loginUser.getName();
+        this.createUserId = loginUser.getUserId();
+        this.createUserName = loginUser.getName();
+        this.createTime = new Date();
+        this.modifyUserId = loginUser.getUserId();
+        this.modifyUserName = loginUser.getName();
+        this.modifyTime = new Date();
     }
 
 }

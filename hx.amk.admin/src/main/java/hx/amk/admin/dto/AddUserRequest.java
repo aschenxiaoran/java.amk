@@ -1,7 +1,10 @@
 package hx.amk.admin.dto;
 
+import javax.validation.constraints.NotEmpty;
+
 public class AddUserRequest {
 
+    @NotEmpty
     private String name;
 
     public String getName(){

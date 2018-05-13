@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/hx.amk.admin/pom.xml" />
         <option value="$PROJECT_DIR$/hx.amk.infrastructure/pom.xml" />
+        <option value="$PROJECT_DIR$/hx.amk.infrastructure.data/pom.xml" />
       </list>
     </option>
   </component>

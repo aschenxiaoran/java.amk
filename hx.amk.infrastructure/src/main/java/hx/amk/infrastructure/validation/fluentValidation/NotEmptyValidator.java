@@ -6,15 +6,21 @@ import com.baidu.unbiz.fluentvalidator.ValidatorContext;
 import com.baidu.unbiz.fluentvalidator.ValidatorHandler;
 import hx.amk.infrastructure.extensions.StringHelper;
 
-public class NotEmptyValidator extends ValidatorHandler<Object> implements Validator<Object> {
+import java.lang.reflect.Type;
 
+public class NotEmptyValidator<T> extends ValidatorHandler<T> implements Validator<T> {
+
+    private final String fieldName;
+
+    public NotEmptyValidator(String fieldName){
+        this.fieldName=fieldName;
+    }
 
     @Override
-    public boolean validate(ValidatorContext context, Object t){
+    public boolean validate(ValidatorContext context, T t){
         if(t==null || t.toString().isEmpty()){
-
-            String typeName=t.getClass().getTypeName();
-            context.addError(ValidationError.create("不能为空").setField(typeName).setInvalidValue(t));
+//            String typeName=Class.class.getTypeName(t);
+            context.addError(ValidationError.create("不能为空").setField(fieldName).setInvalidValue(t));
             return false;
         }
         return true;

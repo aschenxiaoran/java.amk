@@ -18,8 +18,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class UserServiceTest {
 
+    //region private variables
+
     @Autowired
     private IUserService userService;
+
+    //endregion
+
+    //region test cases
 
     @Test
     public void addUser() {
@@ -29,13 +35,9 @@ public class UserServiceTest {
         Assert.assertTrue(response.getIsValid());
     }
 
-    private AddUserRequest createAddUserRequest() {
-        AddUserRequest user=new AddUserRequest();
-        user.setName("xiaoran");
+    //endregion
 
-        return user;
-    }
-
+    //region set up tear down
     @Before
     public void setUp() throws Exception {
     }
@@ -43,6 +45,17 @@ public class UserServiceTest {
     @After
     public void tearDown() throws Exception {
     }
+    //endregion
 
+    //region private methods
+
+    private AddUserRequest createAddUserRequest() {
+        AddUserRequest user=new AddUserRequest();
+        user.setName("xiaoran");
+        user.setCode("00001");
+        return user;
+    }
+
+    //endregion
 
 }

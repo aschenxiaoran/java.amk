@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hx.amk.admin.mapper.UserMapper" >
+    <resultMap id="BaseResultMap" type="hx.amk.admin.domain.User" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="code" property="code" jdbcType="VARCHAR" />
+
+        <result column="createUserId" property="createUserId" jdbcType="INTEGER" />
+        <result column="createUserName" property="createUserName" jdbcType="VARCHAR" />
+        <result column="createTime" property="createTime" />
+
+        <result column="modifyUserId" property="modifyUserId" jdbcType="VARCHAR" />
+        <result column="modifyUserName" property="modifyUserName" jdbcType="VARCHAR" />
+        <result column="modifyTime" property="modifyTime" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id, name, code
+    </sql>
+
+    <select id="getAll" resultMap="BaseResultMap"  >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM user
+    </select>
+
+    <select id="getOne" parameterType="Integer" resultMap="BaseResultMap" >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM user
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="hx.amk.admin.domain.User" >
+        INSERT INTO
+        user
+        (name,code,createUserId,createUserName,createTime,modifyUserId,modifyUserName,modifyTime)
+        VALUES
+        (#{name}, #{code}, #{createUserId},#{createUserName}, #{createTime}, #{modifyUserId},#{modifyUserName}, #{modifyTime})
+    </insert>
+
+    <update id="update" parameterType="hx.amk.admin.domain.User" >
+        UPDATE
+        user
+        SET
+        <if test="name != null">name = #{name},</if>
+       name = #{name}
+        WHERE
+        id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="Integer" >
+        DELETE FROM
+        user
+        WHERE
+        id =#{id}
+    </delete>
+</mapper>
