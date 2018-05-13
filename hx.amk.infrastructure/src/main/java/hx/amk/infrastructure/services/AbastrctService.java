@@ -1,6 +1,5 @@
-package hx.amk.admin.service.impl;
+package hx.amk.infrastructure.services;
 
-import hx.amk.admin.domain.User;
 import hx.amk.infrastructure.exceptions.DomainException;
 import hx.amk.infrastructure.validation.JsonResponse;
 

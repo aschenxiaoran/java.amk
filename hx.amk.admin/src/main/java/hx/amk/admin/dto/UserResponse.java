@@ -1,8 +1,6 @@
 package hx.amk.admin.dto;
 
-import javax.validation.constraints.NotEmpty;
-
-public class AddUserRequest {
+public class UserResponse{
 
 
     private String name;
@@ -24,6 +22,4 @@ public class AddUserRequest {
     public void setCode(String code){
         this.code=code;
     }
-
 }
-

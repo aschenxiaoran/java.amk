@@ -1,4 +1,4 @@
-package hx.amk.admin.service.impl;
+package hx.amk.infrastructure.services;
 
 @FunctionalInterface
 public interface Func{
