@@ -11,8 +11,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 public interface IUserService {
-    @RedisCache(prefix = "User_",option = RedisCache.Option.Add)
-    @Transactional(propagation = Propagation.REQUIRED)
+
+
     JsonResponse addUser(AddUserRequest request, ILoginUser loginUser);
 
     @Transactional(readOnly = true)

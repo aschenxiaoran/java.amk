@@ -1,6 +1,7 @@
 package hx.amk.admin.intercepts;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -19,8 +20,8 @@ public class TestAspect {
     }
 
     @Around("@annotation(test)")
-    public void around(JoinPoint point,Test test){
-            
+    public void around(ProceedingJoinPoint joinPoint, Test test) throws Throwable{
+        Object result=joinPoint.proceed();
     }
 
     @After("@annotation(test)")

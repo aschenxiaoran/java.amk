@@ -1,4 +1,4 @@
-package hx.amk.infrastructure.cache.redis;
+package hx.amk.admin.intercepts.cache;
 
 
 import hx.amk.infrastructure.aggragateRoots.impl.AggragateRoot;
@@ -29,12 +29,16 @@ public class CacheAop {
         switch (redisCache.option()){
             case SEL:
                 return select(cacheKey,joinPoint);
+
             case Add:
                 return add(cacheKey,joinPoint);
+
             case Up:
                 return update(cacheKey,joinPoint);
+
             case DEL:
                 return delete(cacheKey,joinPoint);
+
                 default:
                     break;
         }
