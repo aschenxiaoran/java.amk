@@ -6,8 +6,10 @@ import hx.amk.admin.domain.User;
 import hx.amk.admin.dto.AddUserRequest;
 import hx.amk.admin.dto.UserResponse;
 import hx.amk.admin.extentions.UserExtensions;
+import hx.amk.admin.intercepts.Test;
 import hx.amk.admin.service.IUserService;
 import hx.amk.admin.validator.AddUserValidator;
+import hx.amk.infrastructure.cache.redis.RedisCache;
 import hx.amk.infrastructure.entities.ILoginUser;
 import hx.amk.infrastructure.exceptions.DomainException;
 import hx.amk.infrastructure.services.AbastrctService;
@@ -34,6 +36,9 @@ public class UserService extends AbastrctService implements IUserService {
 
     //region implement IUserService methods
 
+
+    @RedisCache(prefix = "User_",option = RedisCache.Option.Add)
+    @Test(name = "xiaoran")
     @Override
     public JsonResponse addUser(AddUserRequest request, ILoginUser loginUser) {
 
