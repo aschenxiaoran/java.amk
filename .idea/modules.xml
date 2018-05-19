@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hx.amk.admin/admin.iml" filepath="$PROJECT_DIR$/hx.amk.admin/admin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hx.amk.admin/admin.iml" filepath="$PROJECT_DIR$/hx.amk.admin/admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.amk.infrastructure.data/data.iml" filepath="$PROJECT_DIR$/hx.amk.infrastructure.data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.amk.admin/hx.amk.admin.iml" filepath="$PROJECT_DIR$/hx.amk.admin/hx.amk.admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.amk.infrastructure/hx.amk.infrastructure.iml" filepath="$PROJECT_DIR$/hx.amk.infrastructure/hx.amk.infrastructure.iml" />
