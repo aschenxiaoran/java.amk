@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hx.springclouds.discoveryserver:war">
+    <output-path>$PROJECT_DIR$/hx.springclouds.discoveryserver/target</output-path>
+    <root id="archive" name="discoveryserver-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="hx.springclouds.discoveryserver:war exploded" />
+    </root>
+  </artifact>
+</component>

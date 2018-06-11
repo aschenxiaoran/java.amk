@@ -5,5 +5,6 @@
     <file url="file://$PROJECT_DIR$/hx.amk.infrastructure.cache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hx.amk.infrastructure.data" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hx.springclouds.clienttest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hx.springclouds.discoveryserver" charset="UTF-8" />
   </component>
 </project>
