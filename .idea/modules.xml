@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/hx.amk.infrastructure.data/data.iml" filepath="$PROJECT_DIR$/hx.amk.infrastructure.data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.amk.infrastructure/hx.amk.infrastructure.iml" filepath="$PROJECT_DIR$/hx.amk.infrastructure/hx.amk.infrastructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.amk.infrastructure.cache/hx.amk.infrastructure.cache.iml" filepath="$PROJECT_DIR$/hx.amk.infrastructure.cache/hx.amk.infrastructure.cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hx.springclouds.clienttest/hx.springclouds.clienttest.iml" filepath="$PROJECT_DIR$/hx.springclouds.clienttest/hx.springclouds.clienttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/java.amk.iml" filepath="$PROJECT_DIR$/java.amk.iml" />
     </modules>
   </component>

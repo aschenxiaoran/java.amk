@@ -12,6 +12,7 @@
         <module name="hx.amk.infrastructure" />
         <module name="hx.amk.infrastructure.cache" />
         <module name="hx.amk.infrastructure.data" />
+        <module name="hx.springclouds.clienttest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="hx.amk.infrastructure" target="8" />
       <module name="hx.amk.infrastructure.cache" target="1.8" />
       <module name="hx.amk.infrastructure.data" target="1.8" />
+      <module name="hx.springclouds.clienttest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

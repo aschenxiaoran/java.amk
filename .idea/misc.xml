@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/hx.amk.admin" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -7,6 +10,7 @@
         <option value="$PROJECT_DIR$/hx.amk.infrastructure/pom.xml" />
         <option value="$PROJECT_DIR$/hx.amk.infrastructure.data/pom.xml" />
         <option value="$PROJECT_DIR$/hx.amk.infrastructure.cache/pom.xml" />
+        <option value="$PROJECT_DIR$/hx.springclouds.clienttest/pom.xml" />
       </list>
     </option>
   </component>
