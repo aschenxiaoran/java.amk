@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hx.amk.admin/admin.iml" filepath="$PROJECT_DIR$/hx.amk.admin/admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client02/client02.iml" filepath="$PROJECT_DIR$/client02/client02.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.amk.infrastructure.data/data.iml" filepath="$PROJECT_DIR$/hx.amk.infrastructure.data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.amk.infrastructure/hx.amk.infrastructure.iml" filepath="$PROJECT_DIR$/hx.amk.infrastructure/hx.amk.infrastructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.amk.infrastructure.cache/hx.amk.infrastructure.cache.iml" filepath="$PROJECT_DIR$/hx.amk.infrastructure.cache/hx.amk.infrastructure.cache.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hx.springclouds.clienttest/hx.springclouds.clienttest.iml" filepath="$PROJECT_DIR$/hx.springclouds.clienttest/hx.springclouds.clienttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.springclouds.discoveryserver/hx.springclouds.discoveryserver.iml" filepath="$PROJECT_DIR$/hx.springclouds.discoveryserver/hx.springclouds.discoveryserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/java.amk.iml" filepath="$PROJECT_DIR$/java.amk.iml" />
     </modules>
